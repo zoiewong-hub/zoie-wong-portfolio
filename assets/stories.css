@@ -1,0 +1,58 @@
+/* V17: discovery invitations and three connected collection wings. */
+.journey-progress>span{width:23px}.journey-stop{max-width:375px}
+.journey-discoveries:has(button:not([hidden])){display:flex}.journey-discoveries:not(:has(button:not([hidden]))){display:none}
+.receipt-preview{width:min(480px,calc(100vw - 30px));max-height:88svh;border:1px solid #ffffffb0;border-radius:24px;background:linear-gradient(145deg,#f6f7eee8,#e3ebe3d9);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);box-shadow:0 28px 100px #123c4a4d;animation:received-arrival .55s cubic-bezier(.2,.8,.2,1)}
+.receipt-preview::backdrop{background:#133a4740;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.receipt-preview .modal-body{padding:48px 35px 30px}
+.received-page{text-align:center;color:#31524c}.received-page h2{font-size:25px;line-height:1.4;margin:26px 0 12px}.received-page>p{font-size:14px;line-height:1.7;margin:0 0 28px;color:#5c756b}.received-page>div:last-child{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.received-page button{border:1px solid #fff9;background:#ffffff50;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:24px;padding:12px 19px;font-size:12px;color:#31524c;min-height:44px}
+.received-paper{width:120px;height:155px;margin:0 auto;padding:30px 18px;background:linear-gradient(135deg,#fff8e7,#eae4d3);box-shadow:0 12px 30px #2b514724;transform:rotate(-7deg);border-radius:3px;position:relative}.received-paper:after{content:"";position:absolute;top:-7px;left:18px;width:9px;height:25px;border:2px solid #b6a077;border-radius:9px}.received-paper>span{display:block;color:#9c976f;font:29px Georgia;margin-bottom:16px}.received-paper>i{display:block;height:2px;margin:9px 0;background:#b1b9aa}.received-paper>i:nth-last-child(2){width:75%}
+.received-photo .received-paper{width:100%;height:auto;aspect-ratio:1.65;padding:9px 9px 24px;transform:rotate(-3deg);background:#f8f3e8}.received-photo .received-paper img{height:100%;width:100%;object-fit:cover;display:block}
+.collection-zones{display:flex;justify-content:center;gap:10px;margin:0 auto 24px;padding:0 18px;flex-wrap:wrap}.collection-zones button{border-radius:30px;padding:11px 22px;font-size:12px;min-height:42px}.collection-zones button[aria-pressed="true"]{box-shadow:inset 0 0 0 1px #d9c38c;background:linear-gradient(145deg,#d0b77a4a,#c5ae6422)!important}
+.collection-records{padding-top:24px;padding-bottom:65px}.collection-record-section{padding:35px 0;border-top:1px solid #d6be812b}.collection-record-section header h2{font-size:22px;line-height:1.5;margin:0 0 8px}.collection-record-section header p{font-size:12px;color:#bbbd9f;margin-bottom:23px}.collection-record-section>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.collection-record-section button{padding:21px;text-align:left;border-radius:12px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;min-height:145px}.collection-record-section button>span{font-size:11px;color:#cbb580}.collection-record-section button>strong{font-size:17px;font-weight:500;line-height:1.5}.collection-record-section button>small{font-size:12px;line-height:1.7;color:#c8c8ac}.collection-source{font-size:12px;line-height:1.9;color:#c3c5ae;margin-bottom:35px}.collection-source summary{cursor:pointer;margin-bottom:14px}
+@keyframes received-arrival{from{opacity:0;transform:translateY(38px) rotate(-3deg) scale(.94)}to{opacity:1;transform:none}}
+@media(max-width:600px){.receipt-preview .modal-body{padding:45px 24px 26px}.received-page h2{font-size:22px}.received-page>p{font-size:12px}.collection-zones{gap:7px;margin-bottom:18px}.collection-zones button{font-size:11px;padding:9px 15px}.collection-record-section{padding:26px 0}.collection-record-section header h2{font-size:18px}.collection-record-section>div{grid-template-columns:1fr}.collection-record-section button{min-height:0;padding:18px}.collection-record-section button>strong{font-size:16px}.journey-progress>span{width:21px}.journey-page .journey-stop h2{font-size:19px}.journey-page .journey-stop{padding:16px 18px}.journey-discoveries button{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.receipt-preview{animation:none}}
+
+/* Wall-aligned display cabinets: compact labels, generous center aisle. */
+.collection-page .room-plaque{width:112px;min-height:44px;padding:5px 7px;border-radius:3px;background:linear-gradient(140deg,#dbc59780,#b99c655c)!important;backdrop-filter:blur(12px);box-shadow:0 3px 12px #0003;}
+.collection-page .room-plaque strong{font-size:9px;line-height:1.35;margin:3px 0 0}.collection-page .room-plaque small{font-size:7px}.collection-page .room-plaque span{display:none}
+@media(max-width:600px){.collection-page .room-plaques{gap:8px;bottom:12px}.collection-page .room-plaque{width:100%;min-height:44px;padding:5px 7px}.collection-page .room-plaque strong{font-size:9px}}
+
+@media(min-width:601px){.collection-page .room-stage{min-height:620px}}
+@media(max-width:600px){body[data-scene-phase="blue"] .journey-stop{background:linear-gradient(135deg,#56729955,#263c5d44)!important}}
+
+/* V18: one classical gallery, every cabinet labelled, a hidden portrait doorway. */
+.collection-page .room-stage{min-height:650px}.collection-page .room-plaque{width:105px;min-height:44px;padding:4px 6px}.collection-page .room-plaque strong{font-size:8px}.gallery-flower-link{position:absolute;top:18px;left:50%;transform:translateX(-50%);padding:9px 16px;border-radius:22px;min-height:40px;font-size:11px;color:#f0e6ca;z-index:3}
+.collection-all-records{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;padding:22px 0 35px}.collection-all-records>button{padding:18px;text-align:left;border-radius:10px;display:flex;flex-direction:column;gap:9px}.collection-all-records span{font-size:10px;color:#ceb989}.collection-all-records strong{font-size:15px;line-height:1.6;font-weight:500}.collection-all-records small{font-size:11px;line-height:1.7;color:#c5c5ac}.gallery-return{margin-left:var(--gutter)}
+@media(max-width:600px){.collection-all-records{grid-template-columns:1fr 1fr;gap:10px}.collection-all-records>button{padding:13px}.collection-all-records strong{font-size:13px}.collection-page .room-stage{min-height:710px}.collection-page .room-plaques{inset:auto 12px 12px;display:grid;grid-template-columns:1fr 1fr;gap:7px}.collection-page .room-plaque{width:100%;min-height:44px}.collection-page .room-plaque strong{font-size:8px}.gallery-flower-link{top:15px;font-size:10px;white-space:nowrap}}
+
+/* A physical metal card at rest. The legend appears only on hover/focus. */
+.collection-page .room-plaques{position:absolute;inset:0;display:block;pointer-events:none}
+.collection-page .room-plaque,.collection-page .room-plaque:hover{position:absolute;width:44px;height:32px;min-height:32px;padding:0;border:0;background:transparent!important;box-shadow:none;backdrop-filter:none;transform:translate(-50%,-50%);pointer-events:auto;z-index:3;overflow:visible}
+.collection-page .room-plaque::before{content:"";position:absolute;left:50%;top:50%;width:28px;height:11px;transform:translate(-50%,-50%);border:1px solid #d6bd7c;border-radius:2px;background:linear-gradient(145deg,#eed8a0,#9c7942 65%,#d2b87b);box-shadow:0 0 7px #e0b97155,inset 0 1px #fff1c6aa}
+.collection-page .room-plaque::after{content:"·　·";position:absolute;inset:4px 0 0;color:#594c31;font-size:10px;text-align:center;pointer-events:none}
+.collection-page .room-plaque .plaque-legend{display:block;position:absolute;left:14px;bottom:calc(100% + 5px);width:158px;padding:10px 12px;background:#172b25ee;border:1px solid #b59b6266;border-radius:5px;box-shadow:0 8px 24px #0004;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .16s,visibility .16s;color:#f2e9d6;text-align:left;white-space:normal}
+.collection-page .room-plaque:nth-child(even) .plaque-legend{left:auto;right:14px}
+.collection-page .room-plaque .plaque-legend small{display:block;font-size:9px;color:#c9b582;margin-bottom:4px}
+.collection-page .room-plaque .plaque-legend strong{display:block;font-size:11px;line-height:1.55;font-weight:500;color:#f2e9d6}
+.collection-page .room-plaque:is(:hover,:focus-visible){z-index:9;outline:0}
+.collection-page .room-plaque:is(:hover,:focus-visible) .plaque-legend{opacity:1;visibility:visible}
+.scene-unavailable .room-plaques{display:none}
+@media(prefers-reduced-motion:reduce){.collection-page .room-plaque .plaque-legend{transition:none}}
+
+.collection-page .room-plaque::before,.collection-page .room-plaque::after{display:none}
+.collection-page .room-plaque,.collection-page .room-plaque:hover{height:22px;min-height:22px}
+.collection-page .room-plaque:focus-visible{outline:1px solid #d8c18a;outline-offset:2px}
+
+.note-preview{width:min(1080px,94vw);max-height:90svh;overflow-y:auto;overscroll-behavior:contain}
+.note-preview .modal-close{position:sticky;top:14px;right:auto;display:block;margin:14px 14px 0 auto;z-index:10}
+.note-preview .modal-body{padding:8px clamp(22px,5vw,64px) 48px}
+.note-preview .inline-case{width:100%;padding:0;margin:0;max-width:none}
+.note-preview .curated-case-header{padding:24px 0 30px}.note-preview .curated-case-header h2{font-size:clamp(25px,3vw,38px);line-height:1.4;margin:15px 0 24px}
+.note-preview .curated-case-summary{font-size:16px;line-height:1.9}.note-preview .curated-case-layout{display:block}.note-preview .curated-case-content{max-width:none}
+.note-preview .curated-case-chapter{padding:28px 0}.note-preview .curated-case-chapter>p:not(.curated-kicker){font-size:15px;line-height:2}
+.note-preview .case-opening-shot{margin:0}.note-preview .curated-shot img{max-height:54svh;object-fit:contain}
+@media(max-width:600px){.note-preview .case-meta{grid-template-columns:1fr}.note-preview .curated-case-summary{font-size:14px}.note-preview .curated-case-chapter>p:not(.curated-kicker){font-size:14px}}
+
+.star-entry-tag{position:absolute;transform:translate(-50%,0);z-index:5;padding:11px 20px;border-radius:28px;color:#f9e9ad!important;white-space:nowrap;border:1px solid #fff0b399;box-shadow:0 0 24px #f4d47c33;background:#82684544!important;font-size:13px}
+.journey-topline .journey-recenter{margin-left:auto}

@@ -1,0 +1,19 @@
+/* V15: quiet club materials, a darker blue-hour frame, restrained poster controls. */
+.journey-page .island-title h1{font-size:clamp(29px,3.8vw,55px);letter-spacing:-.045em;line-height:1.16;font-weight:500}
+.journey-page .island-subtitle{font-size:15px;line-height:1.6;letter-spacing:.06em;color:#30585d;margin:12px 0 0;font-weight:400}
+body[data-view="home"][data-scene-phase="blue"] .site-header{background:linear-gradient(#10274870,transparent)}
+body[data-view="home"][data-scene-phase="blue"] .site-header .brand,body[data-view="home"][data-scene-phase="blue"] .site-header .brand small{color:#e3e9e3}
+body[data-view="home"][data-scene-phase="blue"] .desktop-nav,body[data-view="home"][data-scene-phase="blue"] .lang-toggle{background:#eaf0e3ca}
+.journey-page .island-stage::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 48% 43%,transparent 45%,#14334918 100%);mix-blend-mode:multiply;z-index:2}
+.journey-page .scene-tooltip{z-index:3}
+.journey-page .journey-stop{background:#f4f1e2e6;border-color:#fffa;box-shadow:0 12px 45px #173c451f;border-radius:19px}
+.journey-page .journey-stop h2{letter-spacing:.015em;font-weight:500}
+.journey-page .journey-primary{background:#294c44;border-color:#294c44;color:#f5edda}
+.journey-page .journey-next{background:#dedfc9;color:#3d5848}
+.journey-page[data-sunset="true"] .journey-stop{width:315px;padding:18px 22px;background:#172f50c7;color:#e3e9e8;border-color:#b7c8d02e;box-shadow:0 15px 50px #07182b33}
+.journey-page[data-sunset="true"] .journey-stop h2{font-size:19px;margin:0 0 15px;color:#edf0e8}
+.journey-page[data-sunset="true"] .journey-stop p,.journey-page[data-sunset="true"] .journey-progress{display:none}
+.journey-page[data-sunset="true"] .journey-primary{background:#d3dddf;color:#203b56;border-color:#e1e6df}
+.journey-page[data-sunset="true"] .journey-back{background:#fffffe0f;color:#d0dcde;border-color:#d0dce344}
+.journey-page[data-sunset="true"] .scene-feedback{color:#d1dcdb}
+@media(max-width:600px){.journey-page .island-title h1{font-size:31px}.journey-page .island-subtitle{font-size:12px;margin-top:12px;letter-spacing:.04em}.journey-page[data-sunset="true"] .journey-stop{width:auto;padding:16px 20px}.journey-page[data-sunset="true"] .journey-stop h2{font-size:18px;margin-bottom:12px}.journey-page .journey-stop h2{font-size:20px}.journey-page .journey-stop p{font-size:10px}}

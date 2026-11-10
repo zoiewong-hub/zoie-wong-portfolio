@@ -1,0 +1,25 @@
+/* Original atmospheric cover. All visuals run locally, with no third-party runtime. */
+.atmosphere-hero{position:relative;background:#080b0e;color:#f1f2f4;height:620px;min-height:530px;isolation:isolate;overflow:hidden;display:flex;justify-content:center;text-align:center;border-bottom:1px solid #202730}
+.atmosphere-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 40%,#16232e70,transparent 62%)}
+.star-field{position:absolute;inset:0;opacity:.4;background-image:radial-gradient(circle,#c9dde4 1px,transparent 1.4px),radial-gradient(circle,#a6b8ce .8px,transparent 1.3px),radial-gradient(circle,#e1d7dd .6px,transparent 1px);background-size:173px 139px,271px 217px,389px 173px;background-position:21px 49px,92px 113px,175px 40px;mask-image:linear-gradient(transparent,#000 20%,#000 65%,transparent)}
+.idea-object{position:absolute;width:660px;height:460px;left:50%;top:0;transform:translate(calc(-50% + var(--move-x,0px)),var(--move-y,0px));transition:transform 1.1s ease-out;pointer-events:none;opacity:.94}
+.idea-object img{width:100%;height:100%;object-fit:contain;animation:idea-breathe 12s ease-in-out infinite alternate;filter:drop-shadow(0 10px 40px #5c85ab20)}
+.atmosphere-copy{position:relative;padding-top:336px;max-width:650px;z-index:2}
+.atmosphere-copy>p:first-child{font-size:11px;letter-spacing:.065em;color:#b3bdc7;margin-bottom:14px}
+.atmosphere-copy h1{font-family:Arial,"Helvetica Neue",sans-serif;font-size:48px;font-weight:500;letter-spacing:-.035em;line-height:1.2;margin:0 0 13px}
+.atmosphere-copy .atmosphere-tagline{font-size:16px;color:#ced3d8;letter-spacing:.15em;margin-bottom:27px}
+.atmosphere-link{display:inline-flex;gap:30px;align-items:center;border:1px solid #465967;border-radius:4px;background:#26374277;color:#e6eef2;padding:10px 24px;font-size:12px;transition:background .25s,border-color .25s}
+.atmosphere-link:hover{background:#344958;border-color:#86a0b3}.atmosphere-link:focus-visible{outline-color:#b7dbef}
+.atmosphere-note{position:absolute;bottom:27px;font-size:9px;letter-spacing:.16em;color:#8d99a6}
+.atmosphere-home .site-header{background:#080b0ef5;border-color:#202730;color:#eef0f3;backdrop-filter:blur(14px)}
+.atmosphere-home .site-header .brand{color:#f1f3f6}.atmosphere-home .site-header .brand small{color:#a0a9b3}.atmosphere-home .site-header .lang-toggle{border-color:#566371}.atmosphere-home .site-header .nav-link::after{background:#b5cad8}
+.atmosphere-home .site-header .menu-toggle span{background:#e1e8ed}.atmosphere-home .mobile-nav{background:#0f151b;color:#e1e8ed;border-color:#2c3540}
+.reading-intro h2{font-size:28px;font-weight:500;line-height:1.6;letter-spacing:-.02em;margin-bottom:15px}
+.reading-intro{padding-block:40px}.intro-bio{padding-top:0}.reading-feature-image,.reading-project-image{overflow:hidden;border-radius:5px}.reading-feature-image img,.reading-project-image img{transition:transform .65s ease}.reading-feature-image:hover img,.reading-project-image:hover img{transform:scale(1.025)}
+.project-media{border-radius:5px}.page-header{border-bottom:1px solid var(--line);margin-bottom:30px}.case-hero{border-bottom:0;margin-bottom:0}.case-cover .image-zoom{border-radius:5px;overflow:hidden}.brief-form,.about-record{border-radius:5px}
+@keyframes idea-breathe{from{transform:translateY(-6px) rotate(-3deg)}to{transform:translateY(7px) rotate(3deg)}}
+@media(max-width:800px){.atmosphere-hero{height:570px}.idea-object{width:590px;height:415px;top:0}.atmosphere-copy{padding-top:306px}.atmosphere-copy h1{font-size:43px}}
+@media(max-width:640px){.atmosphere-hero{height:530px;min-height:0}.idea-object{width:480px;height:355px;top:0}.atmosphere-copy{padding:276px 20px 0;max-width:100%}.atmosphere-copy h1{font-size:35px;letter-spacing:-.045em;white-space:nowrap}.atmosphere-copy>p:first-child{font-size:10px}.atmosphere-copy .atmosphere-tagline{font-size:14px}.atmosphere-note{font-size:8px;bottom:25px}.atmosphere-link{padding:10px 22px}.reading-intro h2{font-size:24px}.reading-intro{padding-block:29px}}
+@media(prefers-reduced-motion:reduce){.idea-object,.idea-object img{animation:none!important;transition:none!important;transform:translate(-50%,0)}.idea-object img{transform:none}.reading-feature-image img,.reading-project-image img{transition:none}}
+.motion-off .idea-object{transform:translate(-50%,0)!important}.motion-off .idea-object img{transform:none!important}
+@media print{.atmosphere-hero{height:180px;background:white;color:black}.star-field,.idea-object,.atmosphere-note{display:none}.atmosphere-copy{padding-top:30px}.atmosphere-copy>p:first-child,.atmosphere-copy .atmosphere-tagline{color:black}}

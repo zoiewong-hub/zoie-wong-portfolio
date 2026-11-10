@@ -1,0 +1,65 @@
+/* V16: soft spatial paper, quiet single-column work, translucent controls. */
+:root{--paper:#f4f5f3;--glass-fill:linear-gradient(145deg,#ffffff73,#ffffff29);--glass-line:#ffffff9c;--glass-ink:#274b49}
+body{background-color:#f4f5f3;background-image:radial-gradient(ellipse at 3% 5%,#dce7e4a6,transparent 48%),radial-gradient(ellipse at 100% 30%,#e3dfe980,transparent 52%),linear-gradient(160deg,#f7f7f4,#edf1ef 72%,#e7edef);background-attachment:fixed}
+body:not([data-view="home"]) .site-header{background:#f7f8f344;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+body:not([data-view="home"]) .site-footer{background:transparent}
+.spatial-work.container{width:min(1100px,100%);margin-inline:auto}
+.spatial-work .studio-heading{padding:75px 0 52px;max-width:none}
+.spatial-work .studio-heading h1{font-size:clamp(30px,3.2vw,45px);margin:0;letter-spacing:-.035em}
+.spatial-work .studio-projects{display:flex;flex-direction:column;gap:80px;padding-bottom:110px}
+.spatial-work .studio-project{width:100%;min-width:0}
+.spatial-work .studio-project-image{aspect-ratio:1.9;border:0;border-radius:22px;overflow:hidden;background:transparent;box-shadow:none}
+.spatial-work .studio-project-image::after{display:none}
+.spatial-work .studio-project-image img{display:block;width:100%;height:100%;padding:0;object-fit:cover;object-position:center;filter:none}
+.spatial-work .studio-project-image:hover img{transform:scale(1.012)}
+.spatial-work .studio-project-image[data-project="zerith-site"] img,.spatial-work .studio-project-image[data-project="waic"] img{object-position:center top}
+.spatial-work .studio-project-image[data-project="chinese-doctors"] img{transform:scale(1.04)}
+.spatial-work .studio-project-image[data-project="chinese-doctors"]:hover img{transform:scale(1.052)}
+.spatial-work .studio-project-caption{display:block;padding:26px 0 0}
+.spatial-work .studio-project-caption h2{font-size:clamp(22px,2.2vw,30px);line-height:1.5;margin:0 0 12px;letter-spacing:-.015em}
+.spatial-work .studio-project-summary{font-size:15px;line-height:1.95;letter-spacing:0;max-width:780px;color:#63726d;margin:0}
+body button{background:var(--glass-fill);border-color:var(--glass-line);backdrop-filter:blur(18px) saturate(1.25);-webkit-backdrop-filter:blur(18px) saturate(1.25)}
+body :is(.journey-page,.collection-page,.portrait-page,.preview-modal) button{background:var(--glass-fill)!important;border:1px solid var(--glass-line);color:var(--glass-ink);backdrop-filter:blur(18px) saturate(1.25);-webkit-backdrop-filter:blur(18px) saturate(1.25);box-shadow:0 8px 26px #193f4b12,inset 0 1px 0 #ffffff75}
+body :is(.journey-page,.collection-page,.portrait-page,.preview-modal) button:hover:not(:disabled){background:linear-gradient(145deg,#ffffffa0,#ffffff4a)!important}
+body .journey-page .journey-actions button{color:var(--glass-ink);border-color:var(--glass-line)}
+body .journey-page .journey-start-icon{background:#ffffff29;box-shadow:inset 0 1px 0 #fff9}
+body .journey-page .journey-stop{background:linear-gradient(145deg,#f5f9f273,#edf4ed33);border:1px solid #ffffff8c;backdrop-filter:blur(24px) saturate(1.2);-webkit-backdrop-filter:blur(24px) saturate(1.2);box-shadow:0 18px 60px #163c4820,inset 0 1px 0 #ffffff80}
+body .journey-page .journey-topline>span{background:#ffffff26;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+body[data-view="home"] .site-footer{display:none}
+body .site-header .desktop-nav,body .site-header .lang-toggle,body .site-header .menu-toggle{background:var(--glass-fill);border:1px solid var(--glass-line);backdrop-filter:blur(18px) saturate(1.25);-webkit-backdrop-filter:blur(18px) saturate(1.25);box-shadow:inset 0 1px 0 #ffffff73}
+body .site-header .desktop-nav .nav-link.is-active{background:#ffffff35;box-shadow:inset 0 1px 0 #ffffff59}
+body .site-header .menu-toggle{border-radius:50%;width:36px;height:36px;padding:9px 7px}
+body[data-view="home"][data-scene-phase="blue"]{--glass-fill:linear-gradient(145deg,#c7ddeb2b,#c7ddeb0c);--glass-line:#cadcec52;--glass-ink:#edf4f2}
+body[data-view="home"][data-scene-phase="blue"] .site-header .nav-link,body[data-view="home"][data-scene-phase="blue"] .site-header .lang-toggle span{color:#e5efed}
+body[data-view="home"][data-scene-phase="blue"] .menu-toggle>span{background:#e5efed}
+body[data-view="home"][data-scene-phase="blue"] .journey-page .journey-stop{background:linear-gradient(145deg,#8fa8cf29,#152c4e29);border-color:#b9cee43d;color:#e5efed}
+body[data-view="home"][data-scene-phase="blue"] .journey-page .journey-stop h2{color:#edf4f2}
+body[data-view="home"][data-scene-phase="blue"] .journey-page .journey-actions button{color:#edf4f2}
+body[data-view="home"][data-scene-phase="blue"] .site-header :is(.desktop-nav,.lang-toggle,.menu-toggle){background:var(--glass-fill)!important;border-color:var(--glass-line)}
+body[data-view="home"][data-scene-phase="blue"] .journey-topline>span{color:#dce8ee;background:#ffffff12}
+body[data-view="archive"]{--glass-fill:linear-gradient(145deg,#e0c58c30,#dbc49a10);--glass-line:#e1cda06b;--glass-ink:#f3e7ca;background-color:#20392e;background-image:radial-gradient(ellipse at 15% 0,#4c625438,transparent 55%),radial-gradient(ellipse at 100% 70%,#12291d70,transparent 65%),linear-gradient(150deg,#2c4438,#1b3026);color:#eadfc6}
+body[data-view="archive"] .collection-page{background:transparent}
+body[data-view="archive"] .site-header{background:#2b443740}
+body[data-view="archive"] .site-header :is(.brand,.nav-link,.lang-toggle span),body[data-view="archive"] .site-footer{color:#eadfc6}
+body[data-view="archive"] .menu-toggle>span{background:#eadfc6}
+body[data-view="archive"] .collection-page .room-plaque,body[data-view="archive"] .collection-page .room-plaque :is(strong,small,span){color:#fff1ce;text-shadow:0 1px 3px #182118a0}
+body[data-view="archive"] .collection-page>.island-return{color:#f3e7ca}
+@media(max-width:600px){.spatial-work .studio-heading{padding:42px 0 30px}.spatial-work .studio-projects{gap:48px;padding-bottom:65px}.spatial-work .studio-project-image{aspect-ratio:1.5;border-radius:12px}.spatial-work .studio-project-caption{padding-top:18px}.spatial-work .studio-project-caption h2{font-size:21px;margin-bottom:9px}.spatial-work .studio-project-summary{font-size:13px;line-height:1.95}.journey-page .journey-stop{bottom:26px!important}.journey-page[data-sunset="true"] .journey-stop{bottom:26px!important}}
+@media(prefers-reduced-motion:reduce){.spatial-work .studio-project-image img{transition:none}}
+.journey-discoveries{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;padding-top:12px;border-top:1px solid #ffffff40}
+.journey-discoveries button{font-size:10px;border-radius:20px;padding:8px 12px;min-height:36px;flex:1}
+.island-return{display:inline-flex;align-items:center;padding:10px 17px;border-radius:24px;font-size:12px;min-height:40px;margin-top:25px;color:#365b52;border:1px solid #ffffffa0}
+.spatial-work>.island-return+.studio-heading{padding-top:35px}
+.collection-page>.island-return{margin-left:var(--gutter)}
+.note-preview{width:min(820px,calc(100vw - 36px));max-height:90svh;background:linear-gradient(140deg,#f6f4ede8,#e5e9e4db);border:1px solid #ffffffba;backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);box-shadow:0 35px 120px #12313e59;border-radius:15px;animation:note-open .3s ease-out}
+.note-preview::backdrop{background:#163d4745;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.note-preview .modal-body{padding:50px 42px 40px}
+.found-note>img{width:100%;height:auto;max-height:44svh;object-fit:contain;border-radius:5px;background:#ffffff4a}
+.found-note h2{font-size:clamp(24px,3vw,34px);margin:27px 0 15px;line-height:1.4}
+.found-note p{font-size:15px;line-height:1.95;color:#5b7068;margin:0 0 25px}
+.found-note>a{display:inline-block;border-bottom:1px solid #8da69b;padding-bottom:7px;font-size:13px;color:#315749}
+body::after{content:"";position:fixed;inset:0;background:#e2e9e5;opacity:0;pointer-events:none;z-index:120;transition:opacity .34s}
+body.island-portal-transition::after{opacity:1}
+@keyframes note-open{from{opacity:0;transform:translateY(18px) rotate(-1deg)}to{opacity:1;transform:none}}
+@media(max-width:600px){.note-preview .modal-body{padding:48px 22px 27px}.found-note h2{font-size:24px;margin-top:20px}.found-note p{font-size:13px}.journey-discoveries button{font-size:10px;min-height:37px}}
+@media(prefers-reduced-motion:reduce){.note-preview{animation:none}body::after{transition:none}}
